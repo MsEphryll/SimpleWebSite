@@ -126,16 +126,33 @@
   <hr>
   <p></p>
   <div>
+    <h5>Programming Skills</h5>
     <ul>
-      <li>Adaptable</li>
-      <li>Resilient</li>
-      <li>Active Listener</li>
-      <li>Creative</li>
-      <li>Ability to learn quickly</li>
+      <li>
+        Python
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%; ">65%</div>
+        </div>
+      </li>
+      <li>
+        Java
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 50%; ">50%</div>
+      </li>
+      <li>
+        JavaScript
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 50%; ">50%</div>
+      </li>
+      <li>
+        PHP
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 45%; ">45%</div>
+      </li>
     </ul>
   </div>
 </div>';
-  ?>
+?>
 
 <!-- </div> -->
 <?php include 'templates/footer.php' ?>
