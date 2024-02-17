@@ -1,5 +1,0 @@
-![githubimg](https://github.com/MsEphryll/SimpleWebSite/assets/135094289/80bcce7b-10ac-4565-9e64-223eebdcf0b7)
-![facebookimg](https://github.com/MsEphryll/SimpleWebSite/assets/135094289/e7b60afa-f3b9-48c9-8f1e-67cc396f5323)
-![linkedlnimg](https://github.com/MsEphryll/SimpleWebSite/assets/135094289/2dff0d81-bead-4983-ba42-69c3354ae566)
-![instagramimg](https://github.com/MsEphryll/SimpleWebSite/assets/135094289/6319005c-9501-49d6-a803-8bb0623e4732)
-![gmailimg](https://github.com/MsEphryll/SimpleWebSite/assets/135094289/a706edea-5854-476d-90f4-e5c9e87a524f)
