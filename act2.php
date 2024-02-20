@@ -1,6 +1,27 @@
 <?php include 'templates/header.php' ?>
 
 <style>
+  @font-face {
+    font-family: protestriot-regular;
+    src: url(fonts/ProtestRiot-Regular.ttf);
+  }
+
+  #actTitle {
+    max-width: 40rem;
+    margin: auto;
+  }
+
+  .act{
+    text-align: center;
+    font-family: protestriot-regular;
+    color: #0A1172;
+
+  }
+
+  .links {
+    text-align: center;
+  }
+
   #main {
     max-width: 500rem;
   }
@@ -12,7 +33,7 @@
     color: #0A1172;
   }
 
-  h5, h6 {
+  h2, h3, h5, h6 {
     color: #0A1172; 
   }
 
@@ -21,8 +42,18 @@
   }
 </style>
 
+<div class="card btn-primary mb-3" id="actTitle";>
+<div class="card-body">
+  <h2 class="act">ACTIVITY 2</h2>
+  <div class="links">
+
+    <a href="act33.php" class="next"><button type="button" class="btn btn-primary btn-sm">Next</button></a>
+  </div>
+</div>
+</div> 
+
 <!-- Problem 1 -->
-<div class="card border-primary mb-3" id="main" style="max-width: 500rem;">
+<div class="card border-primary mb-3" id="main">
   <div class="card-header">Problem 1</div>
   <div class="card-body">
 
