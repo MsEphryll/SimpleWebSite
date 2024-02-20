@@ -47,7 +47,7 @@
   <h2 class="act">ACTIVITY 2</h2>
   <div class="links">
 
-    <a href="act33.php" class="next"><button type="button" class="btn btn-primary btn-sm">Next</button></a>
+    <a href="act3.php" class="next"><button type="button" class="btn btn-primary btn-sm">Next</button></a>
   </div>
 </div>
 </div> 
