@@ -46,7 +46,7 @@
           border-radius: 25px;">
       </a>
 
-      <!-- Github -->
+      <!-- Github 
       <a
         class="btn btn-link btn-floating btn-lg text-dark m-1"
         href="https://github.com/MsEphryll"
@@ -58,6 +58,7 @@
           width: 30px;
           border-radius: 25px;">
       </a>
+      -->
 
       <!-- Linkedin -->
       <a
