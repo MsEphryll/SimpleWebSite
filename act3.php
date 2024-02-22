@@ -47,17 +47,32 @@
   p.txt {
     margin-left: 10px;
   }
+
+  #secfoot{
+   background-color: #fce2e2;
+   padding:30px;
+  }
+
+  #prevnex {
+    border-style: hidden;
+  }
+
+  #prev {
+    float: left;
+    display: grid;
+    margin-top: -15px;
+  }
+
+  .next {
+    float:right;
+    display: grid;
+  }
 </style>
 
 <!-- Activity Number and Button(s) -->
 <div class="card bg-light mb-3" id="actTitle";>
   <div class="card-body">
     <h2 class="act">ACTIVITY 3</h2>
-    <div class="links">
-      
-      <a href="act2.php" class="prev"> <button type="button" class="btn btn-primary btn-sm">Previous</button></a>
-      <!-- <a href="#" class="next"><button type="button" class="btn btn-primary btn-sm">Next</button></a> -->
-    </div>
   </div>
 </div>
 
@@ -77,7 +92,7 @@
     <h5>Solution:</h5>
     <h6>A.</h6>
     <p class="txt">
-      	echo "A. Area of a rectangle: "; <br>
+        echo "A. Area of a rectangle: "; <br>
 	$length = 20;	<br>
 	$width = 30;	<br>
 	<br>
@@ -90,7 +105,7 @@
         echo "B. Convert currency: ";  <br>
 	$amountPhp = 50;	<br>
 	$conversionRate = 0.018;  <br>
-	
+
 	$convertedAmount = $amountPhp * $conversionRate;  <br>
 	echo "Equivalent in USD: " . $convertedAmount;  <br>
     </p>
@@ -103,32 +118,33 @@
 	echo "<strong>A.</strong> Area of a rectangle: "; 
 	$length = 20;
 	$width = 30;
-
+	
 	$area = $length * $width;
 	echo "$area";
 	
 	echo "<br>";
-
+	
 	// output for Problem 1-B
 	echo "<strong>B.</strong> Convert currency: ";
 	$amountPhp = 50;
 	$conversionRate = 0.018;
-
+	
 	$convertedAmount = $amountPhp * $conversionRate;
 	echo "<br>Equivalent in USD: " . $convertedAmount;
-     ?>
+	
+	?>
     </p>  
   </div>
 </div>
 <div class="card border-secondary mb-3" id="main"">
   <div class="card-header">Problem 2</div>
   <div class="card-body">
-  <p>
-	A. Track the progress of a fundraising campaign by updating the donation total dynamically using combined assignment operators. Display the updated total.
-  </p>
-  <p>
-	B. Implement a voting system where candidate votes are incremented based on user input. Display the final vote count for each candidate.
-  </p>
+  	<p>
+	   A. Track the progress of a fundraising campaign by updating the donation total dynamically using combined assignment operators. Display the updated total.
+	</p>
+	<p>
+	   B. Implement a voting system where candidate votes are incremented based on user input. Display the final vote count for each candidate.
+	</p>
 
     <!-- Solution -->
     <h5>Solution:</h5>
@@ -147,7 +163,7 @@
         echo "B. Voting system: ";  <br>
 	$candidateVotes = 49;  <br>
 	$userVote = 30;  <br>
-	
+
 	$candidate1Votes += $userVote;  <br>
 	echo "Candidate 1 total votes: " . $candidate1Votes . ", Candidate 2 total votes: " . $candidate2Votes;
     </p>
@@ -156,22 +172,22 @@
     <h5>Output:</h5>
     <p class="txt ">
     <?php 
-	// output for Problem 2-A
+        // output for Problem 2-A
 	echo "<strong>A.</strong> Track fundraising: "; 
 	$totalDonation = 100;
 	$newDonation = 20;
 	$totalDonation += $newDonation;
-	
+
 	echo "<br>Total donation: $" . $totalDonation;
 	
 	echo "<br>";
-	
+
 	// output for Problem 2-B
 	echo "<strong>B.</strong> Voting system: ";
 	$candidate1Votes = 49;
 	$candidate2Votes = 78;
 	$userVote = 1;
-	
+
 	$candidate1Votes += $userVote;
 	echo "<br>Candidate 1 total votes: " . $candidate1Votes . ", Candidate 2 total votes: " . $candidate2Votes;
       ?>
@@ -185,10 +201,10 @@
   <div class="card-body">
     <p>
       A. Compare the performance of two athletes in a race and determine the winner using comparison operators. Display the result.
-		</p>
-		<p>
+    </p>
+    <p>
       B. Evaluate the efficiency of two algorithms based on their execution times using comparison operators. Display the more efficient algorithm
-		</p>
+    </p>
 
     <!-- Solution -->
     <h5>Solution:</h5>
@@ -267,7 +283,7 @@
 
     <h6>B.</h6>
     <p class="txt">
-     	echo "B. Simulate vehicle movement: ";  <br>
+        echo "B. Simulate vehicle movement: ";  <br>
 	$point = 1;  <br> 
 	$distance = 15; <br>
 
@@ -280,7 +296,7 @@
     <p class="txt ">
       <?php 
         // output for Problem 4-A
-	echo "<strong>A.</strong> Calculate factorial: "; 
+	echo "<strong>A.</strong>Calculate factorial: "; 
 	$number = 10;
 	$factorial = 1;
 
@@ -293,13 +309,13 @@
 	echo "<br>";
 
 	// output for Problem 4-B
-	echo "<strong>B.</strong> Simulate vehicle movement: ";
+	echo "<strong>B.</strong>Simulate vehicle movement: ";
 	$point = 1;
 	$distance = 15;
 
 	$point += $distance;
 	echo "<br>Position of the vehicle: $point";
-?>
+      ?>
     </p>
   </div>
 </div>
@@ -319,22 +335,22 @@
     <h5>Solution:</h5>
     <h6>A.</h6>
     <p class="txt">
-      	echo "A. Determine discount
+      echo "A. Determine discount
 	eligibility: ";  <br>
 	$amount = 500;  <br>
 	$loyaltyDiscount = false;  <br>
-	
+
 	$discount = ($amount > 300 && $loyaltyDiscount) ? "With Discount" : "Without Discount";  <br>
-	
+
 	echo "Discount Eligibility: $discount";  <br>
     </p>
 
     <h6>B.</h6>
     <p class="txt">
-    	echo "B. Chatbot decision-making: ";
+    echo "B. Chatbot decision-making: ";
 	$query = "time";  <br>
 	$time = ($query == "time") ? "It's midnight" : "Invalid!";  <br>
-	
+
 	echo "Response of the Chatboot: $time"; <br>
     </p>
 
@@ -347,21 +363,31 @@
 	eligibility: "; 
 	$amount = 500;
 	$loyaltyDiscount = false;
-	
+
 	$discount = ($amount > 300 && $loyaltyDiscount) ? "With Discount" : "Without Discount";
-	
+
 	echo "<br>Discount Eligibility: $discount";
 	
 	echo "<br>";
-	
+
 	// output for Problem 5-B
 	echo "<strong>B.</strong> Chatbot decision-making: ";
 	$query = "time";
 	$time = ($query == "time") ? "It's midnight" : "Invalid!";
-	
+
 	echo "<br>Response of the Chatboot: $time";
 	?>
     </p> 
+  </div>
+</div>
+
+<div id="secfoot">
+  <div   id="prevnex";>
+    <div class="links">
+      <a href="act2.php" class="prev"> <button type="button" class="btn btn-primary" id="prev">Previous</button></a>
+
+      <a href="#" class="next"> <button type="button" class="btn btn-primary disabled" id="prev">Next</button></a>
+    </div>
   </div>
 </div>
 
