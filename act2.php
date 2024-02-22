@@ -40,15 +40,31 @@
   p.txt {
     margin-left: 10px;
   }
+
+  #secfoot{
+ background-color: #fce2e2;
+ padding:30px;
+}
+
+#prevnex {
+  border-style: hidden;
+}
+
+#prev {
+  float: left;
+  display: grid;
+  margin-top: -15px;
+}
+
+.next {
+  float:right;
+  display: grid;
+}
 </style>
 
 <div class="card btn-primary mb-3" id="actTitle";>
 <div class="card-body">
   <h2 class="act">ACTIVITY 2</h2>
-  <div class="links">
-
-    <a href="act3.php" class="next"><button type="button" class="btn btn-primary btn-sm">Next</button></a>
-  </div>
 </div>
 </div> 
 
@@ -140,4 +156,13 @@
   </div>
 </div>
 
+<div id="secfoot">
+<div   id="prevnex";>
+  <div class="links">
+    <a href="#" class="prev"> <button type="button" class="btn btn-primary disabled" id="prev">Previous</button></a>
+
+    <a href="act3.php" class="next"> <button type="button" class="btn btn-primary" id="prev">Next</button></a>
+  </div>
+</div>
+</div>
 <?php include 'templates/footer.php' ?>
