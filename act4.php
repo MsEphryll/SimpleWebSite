@@ -3,6 +3,7 @@
 <div class="card bg-light mb-3" id="actTitle";>
   <div class="card-body">
     <h2 class="act">ACTIVITY 4</h2>
+    <h5 style="padding:5px; text-align:center;">Passing Variables on the URL</h5>
   </div>
 </div>
 
@@ -109,7 +110,15 @@
     </div>
   </div>
 
+  <div id="secfoot">
+  <div   id="prevnex";>
+    <div class="links">
+      <a href="act3.php" class="prev"> <button type="button" class="btn btn-primary" id="prev">Previous</button></a>
 
+      <a href="#" class="next"> <button type="button" class="btn btn-primary disabled" id="prev">Next</button></a>
+    </div>
+  </div>
+</div>
 
 
 <?php include 'templates/footer.php' ?>
