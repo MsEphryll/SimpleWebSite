@@ -4,6 +4,7 @@
 <div class="card bg-light mb-3" id="actTitle";>
   <div class="card-body">
     <h2 class="act">ACTIVITY 3</h2>
+    <h5 style="padding:5px; text-align:center;">Exploring PHP Operators</h5>
   </div>
 </div>
 
@@ -22,106 +23,117 @@
     <!-- Solution -->
     <h5>Solution:</h5>
     <h6>A.</h6>
-    <p class="txt">
-      echo "A. Area of a rectangle: "; <br>
-			$length = 20;	<br>
-			$width = 30;	<br>
-      <br>
-			$area = $length * $width; <br>
-			echo "$area";  <br>
-    </p>
+    <pre class="code">
+      <code>
+        <span class="keyword">echo</span> <span class="string">"A. Area of a rectangle: "</span>;
+        <span class="variable">$length</span> = 20;	
+        <span class="variable">$width</span> = 30;	
+        
+        <span class="variable">$area</span> = <span class="variable">$length</span> * <span class="variable">$width</span>; 
+        <span class="keyword">echo</span> <span class="string">"<span class="variable">$area</span>"</span>;  
+      </code>
+    </pre>
 
     <h6>B.</h6>
-    <p class="txt">
-      echo "B. Convert currency: ";  <br>
-			$amountPhp = 50;	<br>
-			$conversionRate = 0.018;  <br>
+    <pre class="code">
+      <code>
+        <span class="keyword">echo</span> <span class="string">"B. Convert currency: "</span>; 
+        <span class="variable">$amountPhp</span> = 50;	
+        <span class="variable">$conversionRate</span> = 0.018; 
 
-			$convertedAmount = $amountPhp * $conversionRate;  <br>
-			echo "Equivalent in USD: " . $convertedAmount;  <br>
-    </p>
+        <span class="variable">$convertedAmount</span> = <span class="variable">$amountPhp</span> * <span class="variable">$conversionRate</span>; 
+        <span class="keyword">echo</span> <span class="string">"Equivalent in USD: "</span> . <span class="variable">$convertedAmount</span>;  
+      </code>
+    </pre>
 
     <!-- Output -->
     <h5>Output:</h5>
     <p class="txt ">
-    <?php 
-				// output for Problem 1-A
-				echo "<strong>A.</strong> Area of a rectangle: "; 
-				$length = 20;
-				$width = 30;
+   	 <?php 
+		// output for Problem 1-A
+		echo "<strong>A.</strong> Area of a rectangle: "; 
+		$length = 20;
+		$width = 30;
 
-				$area = $length * $width;
-				echo "$area";
-				
-				echo "<br>";
+		$area = $length * $width;
+		echo "$area";
+		
+		echo "<br>";
 
-				// output for Problem 1-B
-				echo "<strong>B.</strong> Convert currency: ";
-				$amountPhp = 50;
-				$conversionRate = 0.018;
+		// output for Problem 1-B
+		echo "<strong>B.</strong> Convert currency: ";
+		$amountPhp = 50;
+		$conversionRate = 0.018;
 
-				$convertedAmount = $amountPhp * $conversionRate;
-				echo "<br>Equivalent in USD: " . $convertedAmount;
+		$convertedAmount = $amountPhp * $conversionRate;
+		echo "<br>Equivalent in USD: " . $convertedAmount;
 
-			?>
+	?>
     </p>  
   </div>
 </div>
 <div class="card border-secondary mb-3" id="main"">
   <div class="card-header">Problem 2</div>
   <div class="card-body">
-  <p>
-			A. Track the progress of a fundraising campaign by updating the donation total dynamically using combined assignment operators. Display the updated total.
-		</p>
-		<p>
-			B. Implement a voting system where candidate votes are incremented based on user input. Display the final vote count for each candidate.
-		</p>
+	<p>
+		A. Track the progress of a fundraising campaign by updating the donation total dynamically using combined assignment operators. Display the updated total.
+	</p>
+	<p>
+		B. Implement a voting system where candidate votes are incremented based on user input. Display the final vote count for each candidate.
+	</p>
 
     <!-- Solution -->
     <h5>Solution:</h5>
     <h6>A.</h6>
     <p class="txt">
-      echo "A. Track fundraising: ";  <br>
-			$totalDonation = 100;  <br>
-			$newDonation = 20;  <br>
-			$totalDonation += $newDonation;  <br>
+    <pre class="code">
+      <code>
+      <span class="keyword">echo</span> <span class="string">"A. Track fundraising: "</span>;  
+        <span class="variable">$totalDonation</span> = 100; 
+        <span class="variable">$newDonation</span> = 20; 
+        <span class="variable">$totalDonation</span> += <span class="variable">$newDonation</span>;
 
-			echo "Total donation: $" . $totalDonation;  <br>
-    </p>
+        <span class="keyword">echo</span> <span class="string">"Total donation: $" </span>. <span class="variable">$totalDonation</span>; 
+      </code>
+    </pre>
 
     <h6>B.</h6>
     <p class="txt">
-      echo "B. Voting system: ";  <br>
-			$candidateVotes = 49;  <br>
-			$userVote = 30;  <br>
+    <pre class="code">
+      <code>
+      <span class="keyword">echo</span> <span class="string">"B. Voting system: "</span>;  
+      <span class="variable">$candidate1Votes</span> = 49;
+      <span class="variable">$candidate2Votes</span> = 78;
+      <span class="variable">$userVote</span> = 1;
 
-			$candidate1Votes += $userVote;  <br>
-			echo "Candidate 1 total votes: " . $candidate1Votes . ", Candidate 2 total votes: " . $candidate2Votes;
-    </p>
+      <span class="variable">$candidate1Votes</span> += <span class="variable">$userVote</span>;
+      <span class="keyword">echo</span> <span class="string">"Candidate 1 total votes: " . <span class="variable">$candidate1Votes</span> . ", Candidate 2 total votes: " . <span class="variable">$candidate2Votes</span></span>;
+      </code>
+    </pre>
 
     <!-- Output -->
     <h5>Output:</h5>
     <p class="txt ">
     <?php 
         // output for Problem 2-A
-				echo "<strong>A.</strong> Track fundraising: "; 
-				$totalDonation = 100;
-				$newDonation = 20;
-				$totalDonation += $newDonation;
+		echo "<strong>A.</strong> Track fundraising: "; 
+		$totalDonation = 100;
+		$newDonation = 20;
+		$totalDonation += $newDonation;
 
-				echo "<br>Total donation: $" . $totalDonation;
-				
-				echo "<br>";
+		echo "<br>Total donation: $" . $totalDonation;
+		
+		echo "<br>";
 
-				// output for Problem 2-B
-				echo "<strong>B.</strong> Voting system: ";
-				$candidate1Votes = 49;
-				$candidate2Votes = 78;
-				$userVote = 1;
+		// output for Problem 2-B
+		echo "<strong>B.</strong> Voting system: ";
+		$candidate1Votes = 49;
+		$candidate2Votes = 78;
+		$userVote = 1;
 
-				$candidate1Votes += $userVote;
-				echo "<br>Candidate 1 total votes: " . $candidate1Votes . ", Candidate 2 total votes: " . $candidate2Votes;
-			?>
+		$candidate1Votes += $userVote;
+		echo "<br>Candidate 1 total votes: " . $candidate1Votes . ", Candidate 2 total votes: " . $candidate2Votes;
+	?>
     </p> 
   </div>
 </div>
@@ -140,48 +152,47 @@
     <!-- Solution -->
     <h5>Solution:</h5>
     <h6>A.</h6>
-    <p class="txt">
-      echo "A. Compare athlete times: ";   <br>
-			$athlete1 = 10.20;  <br>
-			$athlete2 = 9.78;  <br>
+    <pre class="code">
+      <code>
+      <span class="keyword">echo</span> <span class="string">"A. Compare athlete times: "</span>;  
+      <span class="variable">$athlete1</span> = 10.20; 
+      <span class="variable">$athlete2</span> = 9.78; 
 
-			$winner = ($athlete1 < $athlete2) ? "Athlete 1" : "Athelete 2"; <br>
-			echo "The winner is: $winner";  <br>
-			
-    </p>
+      <span class="variable">$winner</span> = (<span class="variable">$athlete1</span> < <span class="variable">$athlete2</span>) ? <span class="string">"Athlete 1"</span> : <span class="string">"Athelete 2"</span>; 
+      <span class="keyword">echo</span> <span class="string">"The winner is: $winner"</span>;
+      </code>
+    </pre>
 
     <h6>B.</h6>
-    <p class="txt">
-      echo "B. Evaluate algorithm efficiency: ";  <br>
-			$firstAlgorithm = 0.003;  <br>
-			$secondAlgorithm = 0.001;  <br>
+    <pre class="code">
+      <code>
+        <span class="keyword">echo</span> <span class="string">"B. Evaluate algorithm efficiency: "</span>; 
+        <span class="variable">$firstAlgorithm</span> = 0.003;  
+        <span class="variable">$secondAlgorithm</span> = 0.001;  
 
-			$faster = ($firstAlgorithm < $secondAlgorithm) ? "First Algotrithm" : "Second Algorithm";  <br>
-			echo "<br>Faster Algorithm is the $faster";  <br>
-    </p>
-
-    <!-- Output -->
-    <h5>Output:</h5>
-    <p class="txt ">
+        <span class="variable">$faster</span> = (<span class="variable">$firstAlgorithm</span> < <span class="variable">$secondAlgorithm</span>) ? <span class="string">"First Algotrithm"</span> : <span class="string">"Second Algorithm"</span>; 
+        <span class="keyword">echo</span> <span class="string">"Faster Algorithm is the $faster"</span>;  
+      </code>
+    </pre>
     <?php 
         // output for Problem 3-A
-				echo "<strong>A.</strong> Compare athlete times: "; 
-				$athlete1 = 10.20;
-				$athlete2 = 9.78;
+		echo "<strong>A.</strong> Compare athlete times: "; 
+		$athlete1 = 10.20;
+		$athlete2 = 9.78;
 
-				$winner = ($athlete1 < $athlete2) ? "Athlete 1" : "Athelete 2";
-				echo "<br>The winner is: $winner";
-				
-				echo "<br>";
+		$winner = ($athlete1 < $athlete2) ? "Athlete 1" : "Athelete 2";
+		echo "<br>The winner is: $winner";
+		
+		echo "<br>";
 
-				// output for Problem 3-B
-				echo "<strong>B.</strong> Evaluate algorithm efficiency: ";
-				$firstAlgorithm = 0.003;
-				$secondAlgorithm = 0.001;
+		// output for Problem 3-B
+		echo "<strong>B.</strong> Evaluate algorithm efficiency: ";
+		$firstAlgorithm = 0.003;
+		$secondAlgorithm = 0.001;
 
-				$faster = ($firstAlgorithm < $secondAlgorithm) ? "First Algotrithm" : "Second Algorithm";
-				echo "<br>Faster Algorithm is the $faster";
-			?>
+		$faster = ($firstAlgorithm < $secondAlgorithm) ? "First Algotrithm" : "Second Algorithm";
+		echo "<br>Faster Algorithm is the $faster";
+	?>
     </p> 
   </div>
 </div>
@@ -200,55 +211,57 @@
     <!-- Solution -->
     <h5>Solution:</h5>
     <h6>A.</h6>
-    <p class="txt">
-      echo "A. Calculate factorial: "; <br>
-			$number = 10;  <br>
-			$factorial = 1;  <br>
+    <pre class="code">
+      <code>
+        <span class="keyword">echo</span> <span class="string">"A. Calculate factorial: "</span>; 
+        <span class="variable">$number</span> = 10; 
+        <span class="variable">$factorial</span> = 1;  
 
-			for ($i = 1; $i <= $number; $i++) {  
-				$factorial *= $i;
-			}  <br>
+        <span class="keyword">for</span> (<span class="variable">$i</span> = 1; <span class="variable">$i</span> <= <span class="variable">$number</span>; <span class="variable">$i++</span>) {  
+          <span class="variable">$factorial</span> *= <span class="variable">$i</span>;
+        }  
 
-			echo "Factorial of $number: $factorial";  <br>
-    </p>
+        <span class="keyword">echo</span> <span class="string">"Factorial of <span class="variable">$number</span>: <span class="variable">$factorial</span>"</span>;  
+      </code>
+    </pre>
 
     <h6>B.</h6>
-    <p class="txt">
-      echo "B. Simulate vehicle movement: ";  <br>
-				$point = 1;  <br> 
-				$distance = 15; <br>
+      <pre class="code">
+        <code>
+        <span class="keyword">echo</span> <span class="string">"B. Simulate vehicle movement: "</span>; 
+        <span class="variable">$point</span> = 1;
+        <span class="variable">$distance</span> = 15;
 
-				$point += $distance; <br>
-				echo "Position of the vehicle: $point";  <br>
-    </p>
+        <span class="variable">$point</span> += <span class="variable">$distance</span>;
+        <span class="keyword">echo</span> <span class="string">"Position of the vehicle: <span class="variable">$point</span>"</span>;
+        </code>
+      </pre>
 
     <!-- Output -->
     <h5>Output:</h5>
     <p class="txt ">
       <?php 
         // output for Problem 4-A
-				echo "<strong>A.</strong>
-        Calculate factorial: "; 
-				$number = 10;
-				$factorial = 1;
+	echo "<strong>A.</strong>Calculate factorial: "; 
+	$number = 10;
+	$factorial = 1;
 
-				for ($i = 1; $i <= $number; $i++) {
-					$factorial *= $i;
-				}
+	for ($i = 1; $i <= $number; $i++) {
+		$factorial *= $i;
+	}
 
-				echo "<br>Factorial of $number: $factorial";
-				
-				echo "<br>";
+	echo "<br>Factorial of $number: $factorial";
+	
+	echo "<br>";
 
-				// output for Problem 4-B
-				echo "<strong>B.</strong>
-        Simulate vehicle movement: ";
-				$point = 1;
-				$distance = 15;
+	// output for Problem 4-B
+	echo "<strong>B.</strong>Simulate vehicle movement: ";
+	$point = 1;
+	$distance = 15;
 
-				$point += $distance;
-				echo "<br>Position of the vehicle: $point";
-			?>
+	$point += $distance;
+	echo "<br>Position of the vehicle: $point";
+	?>
     </p>
   </div>
 </div>
@@ -267,49 +280,53 @@
     <!-- Solution -->
     <h5>Solution:</h5>
     <h6>A.</h6>
-    <p class="txt">
-      echo "A. Determine discount
-			eligibility: ";  <br>
-			$amount = 500;  <br>
-			$loyaltyDiscount = false;  <br>
+    <pre class="code">
+      <code>
+        <span class="keyword">echo</span> <span class="string">"A. Determine discount
+        eligibility: "</span>;  
+        <span class="variable">$amount</span> = 500;  
+        <span class="variable">$loyaltyDiscount</span> = <span class="boolean">false</span>; 
 
-			$discount = ($amount > 300 && $loyaltyDiscount) ? "With Discount" : "Without Discount";  <br>
+        <span class="variable">$discount</span> = (<span class="variable">$amount</span> > 300 <span class="comparator">&&</span> <span class="variable">$loyaltyDiscount</span>) ? <span class="string">"With Discount"</span> : <span class="string">"Without Discount"</span>;  
 
-			echo "Discount Eligibility: $discount";  <br>
-    </p>
+        <span class="keyword">echo</span> <span class="string">"Discount Eligibility: <span class="variable">$discount</span>"</span>;  
+      </code>
+    </pre>
 
     <h6>B.</h6>
-    <p class="txt">
-    echo "B. Chatbot decision-making: ";
-			$query = "time";  <br>
-			$time = ($query == "time") ? "It's midnight" : "Invalid!";  <br>
+  <pre class="code">
+      <code>
+        <span class="keyword">echo</span> <span class="string">"B. Chatbot decision-making: "</span>;
+        <span class="variable">$query</span> = <span class="string">"time"</span>; 
+        <span class="variable">$time</span> = (<span class="variable">$query</span> == <span class="string">"time"</span>) ? <span class="string">"It's midnight" </span>: <span class="string">"Invalid!" </span>;  
 
-			echo "Response of the Chatboot: $time"; <br>
-    </p>
+        <span class="keyword">echo</span> <span class="string">"Response of the Chatboot: <span class="variable">$time</span>"</span>; 
+      </code>
+    </pre>
 
     <!-- Output -->
     <h5>Output:</h5>
     <p class="txt ">
       <?php 
        // output for Problem 5-A
-				echo "<strong>A.</strong> Determine discount
-				eligibility: "; 
-				$amount = 500;
-				$loyaltyDiscount = false;
+	echo "<strong>A.</strong> Determine discount
+	eligibility: "; 
+	$amount = 500;
+	$loyaltyDiscount = false;
 
-				$discount = ($amount > 300 && $loyaltyDiscount) ? "With Discount" : "Without Discount";
+	$discount = ($amount > 300 && $loyaltyDiscount) ? "With Discount" : "Without Discount";
 
-				echo "<br>Discount Eligibility: $discount";
-				
-				echo "<br>";
+	echo "<br>Discount Eligibility: $discount";
+	
+	echo "<br>";
 
-				// output for Problem 5-B
-				echo "<strong>B.</strong> Chatbot decision-making: ";
-				$query = "time";
-				$time = ($query == "time") ? "It's midnight" : "Invalid!";
+	// output for Problem 5-B
+	echo "<strong>B.</strong> Chatbot decision-making: ";
+	$query = "time";
+	$time = ($query == "time") ? "It's midnight" : "Invalid!";
 
-				echo "<br>Response of the Chatboot: $time";
-			?>
+	echo "<br>Response of the Chatboot: $time";
+    ?>
     </p> 
   </div>
 </div>
@@ -319,7 +336,7 @@
     <div class="links">
       <a href="act2.php" class="prev"> <button type="button" class="btn btn-primary" id="prev">Previous</button></a>
 
-      <a href="#" class="next"> <button type="button" class="btn btn-primary disabled" id="prev">Next</button></a>
+      <a href="act4.php" class="next"> <button type="button" class="btn btn-primary" id="prev">Next</button></a>
     </div>
   </div>
 </div>
