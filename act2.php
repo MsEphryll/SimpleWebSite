@@ -4,6 +4,7 @@
 <div class="card btn-primary mb-3" id="actTitle";>
   <div class="card-body">
     <h2 class="act">ACTIVITY 2</h2>
+    <h5 style="padding:5px; text-align:center;">Variable in PHP</h5>
   </div>
 </div> 
 
@@ -23,7 +24,11 @@
 
       <!-- Solution -->
       <h5>Solution:</h5>
-      <p class="txt">echo "Hello World";</p>
+      <pre class="code">
+        <code>
+          <span class="keyword">echo</span> <span class="string">"Hello World"</span>;
+        </code>
+      </pre>
 
       <!-- Output -->
       <h5>Output:</h5>
@@ -51,9 +56,12 @@
 
       <!-- Solution -->
       <h5>Solution:</h5>
-      <p style="margin-left: 10px;"> $hello = "Hello PHP"; <br>
-          echo "$hello";
-      </p>
+      <pre class="code">
+        <code>
+          <span class="variable">$hello</span> = <span class="string">"Hello PHP"</span>;
+          <span class="keyword">echo</span> <span class="string">"$hello"</span>;
+        </code>
+      </pre>
 
       <h5>Output:</h5>
       <p style="margin-left: 10px;">
@@ -80,10 +88,12 @@
       </p>
 
       <h5>Solution:</h5>
-      <p style="margin-left: 10px;"> 
-          $a = "PHP World"; <br>
-          echo "Welcome to $a"
-      </p>
+      <pre class="code">
+        <code>
+          <span class="variable">$a</span> = <span class="string">"PHP World"</span>;
+          <span class="keyword">echo</span> <span class="string">"Welcome to <span class="variable">$a</span>"</span>;
+        </code>
+      </pre>
 
       <h5>Output:</h5>
       <p style="margin-left: 10px;">
