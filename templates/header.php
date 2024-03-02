@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>April B</title>
+    <link rel="shortcut icon" href="images/ablogo2.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/another.css">
+    <link rel="stylesheet" href="assets/css/codelike.css">
 </head>
 <body>
 
@@ -32,6 +34,7 @@
           <div class="dropdown-menu">
             <a class="dropdown-item" href="act2.php">Activity 2</a>
             <a class="dropdown-item" href="act3.php">Activity 3</a> 
+            <a class="dropdown-item" href="act4.php">Activity 4</a> 
           </div>
         <!-- End of the activities -->
         
